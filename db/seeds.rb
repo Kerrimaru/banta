@@ -5,20 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create(name:'Amy', email:'amy@email.com' password:'pass123')
+User.create(name:'Kitty', email:'kitty@email.com' password:'pass123')
+User.create(name:'Jordan', email:'Jordan@email.com' password:'pass123')
+User.create(name:'Sheraa', email:'power@email.com' password:'pass123')
+User.create(name:"Bella", password: "pass123", email: "bella@dog.com")
+User.create(name:'Lettuice', email:'saladfingers@email.com' password:'pass123')
+User.create(name:"Userman", password: "pass123", email: "user@userman")
+User.create(name:"Vikram", password: "pass123", email: "vik@hotguy")
+User.create(name:'Kerri', email:'Kerri@hotstuff.com' password:'pass123')
 
-users = [
-  {name:"Bella", password: "pass123", email: "bella@dog.com"},
-  {name:"Userman", password: "pass123", email: "user@userman"},
-  {name:"Vikram", password: "pass123", email: "vik@hotguy"}
-]
-
-users = User.create!(users)
-
-rooms = {
-  {name: "Dogs"},
-  {name: "Bikes"},
-  {name: "Rooms"}
-}
-
-
-rooms = Room.create!
+Room.create(name:'Kawaii Culture')
+Room.create(name:'Hello Kitty')
+Room.create(name:'Small Furry Pets')
+Room.create(name:'Dogs')
+Room.create(name:'Bikes')
+Room.create(name:'Rooms')
