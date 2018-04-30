@@ -19,7 +19,6 @@ User.create!(name: 'John', email:'John@yo.com', password: 'pass123')
 User.create!(name: 'Bob', email:'bob@yo.com', password: 'pass123')
 User.create!(name: 'Jess', email:'jess@yo.com', password: 'pass123')
 
-
 Room.create(name:'Kawaii Culture')
 Room.create(name:'Hello Kitty')
 Room.create(name:'Small Furry Pets')
@@ -29,3 +28,4 @@ Room.create(name:'Rooms')
 Room.create!(name: 'Scifi')
 Room.create!(name: 'Gosip club')
 Room.create!(name: 'Zen X')
+
