@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   resources :rooms, :users
   devise_for :users, controllers: {sessions: 'users/sessions'}
   root to: "users#index"
