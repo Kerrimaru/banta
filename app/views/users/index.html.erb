@@ -1,1 +1,45 @@
-"Hello World"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Banta- Chat With Friends</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bantacsslayout.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <h1> Banta</h1>
+        <h4> Chat With Friends</h4>
+      <nav>
+        <a href="#">Rooms</a> | <%= link_to
+        <a href="#">Profile</a>
+      </nav>
+    </header>
+
+  <!-- <div class="container"> -->
+      <div class="room_sidebar"> <!-- side bar on the left hand side that hold room names -->
+        <h1> Rooms:</h1>
+        <ul>
+          <li>Kawaii Culture</li>
+          <li>Hello Kitty</li>
+          <li>Dogs</li>
+          <li>Sci-Fi</li>
+          <li>Gossip Club</li>
+          <li>Bikes</li>
+          <li>The Apocalypse</li>
+          <li>Coding</li>
+        </ul>
+      </div>
+
+      <div class="message_box"> <!-- side bar on the right hand side that displays messages -->
+      Messages will appear here....
+    </div>
+
+    <div class="input_box"><!--  box on the bottom right hand side underneath 'display messages' box that you type messages into.  -->
+      Enter your message...
+    </div>
+</div>
+</body>
+</html>
