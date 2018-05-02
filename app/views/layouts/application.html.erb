@@ -4,12 +4,23 @@
     <title>Banta</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="stylesheet" type="text/css" href="bantacsslayout.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
+     <header>
+        <h1> Banta</h1>
+        <h4> Chat With Friends</h4>
+      <nav>
+        <a href="#">Rooms</a> |
+        <a href="#">Profile</a>
+      </nav>
+    </header>
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>

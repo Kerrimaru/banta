@@ -13,9 +13,59 @@
  *= require_tree .
  *= require_self
  */
- h1 {
-   font-family: 'Pacifico', cursive;
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+header{
+  background-color: #857;
+}
+h1, h4 {
+  
+  font-family: 'Pacifico', cursive;
+}
 
-.nav {
-    
+nav {
+  margin: 10px;
+  padding: 10px 10px;
+  width: 97%;
+  display: inline-block;
+  list-style: none;
+  border: 2px solid black;
+  background-color: #d56;
+}
+.room_sidebar, li{
+  list-style: none;
+
+}
+li{
+  margin: 15px;
+  padding: 5px;
+  text-align: left;
+}
+body{
+
+}
+.room_sidebar {
+  border: 2px solid black;
+  background-color: #659;
+}
+.message_box{
+  border: 2px solid black;
+  background-color: #d53;
+
+}
+
+.container{
+  justify-content: stretch; 
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  background:#eee;
+  grid-gap: 10px;
 }
