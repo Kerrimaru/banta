@@ -3,4 +3,5 @@ class Room < ApplicationRecord
   has_many :messages
 
   validates :name, presence: true
+  scope :sorted, lambda {order("name ASC")}
 end

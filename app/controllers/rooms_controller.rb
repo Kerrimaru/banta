@@ -4,12 +4,13 @@ class RoomsController < ApplicationController
   # GET /rooms
   # GET /rooms.json
   def index
-    @rooms = Room.all
+    @rooms = Room.all.sorted
   end
 
   # GET /rooms/1
   # GET /rooms/1.json
   def show
+    set_room    
   end
 
   # GET /rooms/new
@@ -19,6 +20,8 @@ class RoomsController < ApplicationController
 
   # GET /rooms/1/edit
   def edit
+    set_room
+    render('edit')
   end
 
   # POST /rooms
