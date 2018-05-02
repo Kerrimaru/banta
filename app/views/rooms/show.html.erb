@@ -6,4 +6,11 @@
 </p>
 
 <%= link_to 'Edit', edit_room_path(@room) %> |
-<%= link_to 'Back', rooms_path %>
+<%= link_to 'Back', rooms_path %><br>
+
+
+<% @messages.where(room: params[:id]).each do |message| %>
+<%= message.body %>
+~<%= message.user.name %> @ <%= message.created_at %><br>
+<% end %>
+<%= %>
