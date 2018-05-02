@@ -18,15 +18,16 @@
   padding: 0;
 }
 html{
+  background: #dddfe6;
   text-align: center;
-  font-family: 'Pacifico', cursive;
+
 }
 header{
-  background-color: #857;
+  background-color: #cff0da;
 }
 h1, h4 {
-  
-  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  font-family: 'Gugi', cursive;
 }
 
 nav {
@@ -36,7 +37,7 @@ nav {
   display: inline-block;
   list-style: none;
   border: 2px solid black;
-  background-color: #d56;
+  background-color: #c9d6de;
 }
 .room_sidebar, li{
   list-style: none;
@@ -47,16 +48,18 @@ li{
   padding: 5px;
   text-align: left;
 }
-body{
+table, td, tr{
+ list-style: none;
 
 }
 .room_sidebar {
   border: 2px solid black;
-  background-color: #659;
+  background-color: #55967e;
+   font-family: 'Gugi', cursive;
 }
 .message_box{
   border: 2px solid black;
-  background-color: #d53;
+  background-color: #e4e7ec;
 
 }
 
@@ -64,8 +67,8 @@ body{
   justify-content: stretch; 
   display: inline-grid;
   width: 100%;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 200px 2fr;
   grid-template-rows: auto;
-  background:#eee;
+  background: #e4e7ec;
   grid-gap: 10px;
 }

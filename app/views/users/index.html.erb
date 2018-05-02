@@ -1,6 +1,7 @@
+  <%= link_to('LogOut', destroy_user_session_path)%>
   <div class="container"> 
       <div class="room_sidebar"> <!-- side bar on the left hand side that hold room names -->
-        <h1> Rooms:</h1>
+       <br> <h1> Rooms:</h1>
         <ul><% @rooms.each do |room| %>
           <li><%= room.name %></li>
         <% end %></ul>
