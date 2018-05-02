@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" type="text/css" href="bantacsslayout.css">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
@@ -13,11 +13,14 @@
 
   <body>
      <header>
-        <h1> Banta</h1>
+        <br><h1><%= link_to('Banta', root_path)%> </h1><br>
         <h4> Chat With Friends</h4>
       <nav>
-        <a href="#">Rooms</a> |
-        <a href="#">Profile</a>
+        <%= link_to('Rooms',rooms_path)%> |        
+        <%= link_to('Profile', users_path)%> |
+        <%= link_to('SignUp', new_user_registration_path)%> |
+        <%= link_to('Login', new_user_session_path)%> |
+
       </nav>
     </header>
 
@@ -26,3 +29,4 @@
     <%= yield %>
   </body>
 </html>
+ 
