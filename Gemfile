@@ -38,6 +38,7 @@ group :development, :test do
   gem 'simplecov'
   gem 'rspec-rails', '~> 3.7'
   gem 'capybara'
+  gem 'pry'
 end
 
 group :development do

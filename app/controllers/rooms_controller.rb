@@ -4,7 +4,7 @@ class RoomsController < ApplicationController
   # GET /rooms
   # GET /rooms.json
   def index
-    @rooms = Room.all
+    @rooms = Room.all.sorted
   end
 
   # GET /rooms/1
@@ -17,6 +17,7 @@ class RoomsController < ApplicationController
     @user = current_user
     @room = rooms.find(params[:room_id])
     @message = message.new(review_params)
+    @messages = Message.all
   end
 
   # GET /rooms/new
@@ -26,6 +27,8 @@ class RoomsController < ApplicationController
 
   # GET /rooms/1/edit
   def edit
+    set_room
+    render('edit')
   end
 
   # POST /rooms
