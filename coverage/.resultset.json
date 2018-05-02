@@ -1,38 +1,59 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/shumai/Documents/may/grp_pro/banta/app/models/user.rb": [
+      "/home/kerri/Documents/WGC/banta/app/models/user.rb": [
         1,
         null,
         null,
         1,
         null,
-        null
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/models/application_record.rb": [
+        null,
         1,
         1,
         null
       ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/helpers/rooms_helper.rb": [
-        1,
-        null
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/helpers/users_helper.rb": [
-        1,
-        null
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/models/message.rb": [
-        1,
+      "/home/kerri/Documents/WGC/banta/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/models/room.rb": [
+      "/home/kerri/Documents/WGC/banta/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/kerri/Documents/WGC/banta/app/helpers/rooms_helper.rb": [
+        1,
+        null
+      ],
+      "/home/kerri/Documents/WGC/banta/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/home/kerri/Documents/WGC/banta/app/controllers/users_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/home/kerri/Documents/WGC/banta/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/home/kerri/Documents/WGC/banta/app/models/message.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/kerri/Documents/WGC/banta/app/models/room.rb": [
         1,
         1,
         1,
@@ -40,17 +61,29 @@
         1,
         null
       ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/jobs/application_job.rb": [
-        0,
-        0
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/mailers/application_mailer.rb": [
+      "/home/kerri/Documents/WGC/banta/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/controllers/rooms_controller.rb": [
+      "/home/kerri/Documents/WGC/banta/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/kerri/Documents/WGC/banta/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/home/kerri/Documents/WGC/banta/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/kerri/Documents/WGC/banta/app/controllers/rooms_controller.rb": [
         0,
         0,
         null,
@@ -126,57 +159,7 @@
         0,
         0
       ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/controllers/users_controller.rb": [
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/controllers/application_controller.rb": [
-        0,
-        0
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/controllers/users/omniauth_callbacks_controller.rb": [
-        null,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        0
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/controllers/users/registrations_controller.rb": [
+      "/home/kerri/Documents/WGC/banta/app/controllers/users/registrations_controller.rb": [
         null,
         null,
         0,
@@ -247,100 +230,7 @@
         null,
         0
       ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/controllers/users/confirmations_controller.rb": [
-        null,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        0
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/controllers/users/sessions_controller.rb": [
-        null,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        0
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/controllers/users/unlocks_controller.rb": [
-        null,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        0
-      ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/controllers/users/passwords_controller.rb": [
+      "/home/kerri/Documents/WGC/banta/app/controllers/users/passwords_controller.rb": [
         null,
         null,
         0,
@@ -376,19 +266,132 @@
         null,
         0
       ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/channels/application_cable/channel.rb": [
+      "/home/kerri/Documents/WGC/banta/app/controllers/users/confirmations_controller.rb": [
+        null,
+        null,
         0,
-        0,
-        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         0
       ],
-      "/home/shumai/Documents/may/grp_pro/banta/app/channels/application_cable/connection.rb": [
+      "/home/kerri/Documents/WGC/banta/app/controllers/users/unlocks_controller.rb": [
+        null,
+        null,
         0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0
+      ],
+      "/home/kerri/Documents/WGC/banta/app/controllers/users/sessions_controller.rb": [
+        null,
+        null,
         0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0
+      ],
+      "/home/kerri/Documents/WGC/banta/app/controllers/users/omniauth_callbacks_controller.rb": [
+        null,
+        null,
         0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         0
       ]
     },
-    "timestamp": 1525274638
+    "timestamp": 1525275425
   }
 }
