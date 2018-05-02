@@ -30,9 +30,9 @@ h1, h4 {
 }
 
 nav {
-  margin: 10px 5px ;
+  margin: 10px;
   padding: 10px 10px;
-  width: 100%;
+  width: 97%;
   display: inline-block;
   list-style: none;
   border: 2px solid black;
@@ -60,7 +60,7 @@ body{
 
 }
 
-.main{
+.container{
   justify-content: stretch; 
   display: inline-grid;
   width: 100%;
@@ -68,13 +68,4 @@ body{
   grid-template-rows: auto;
   background:#eee;
   grid-gap: 10px;
-}
-
-#but{
-  display: inline-block;
-  background-color: #fd8;
-}
-
-footer{
- width: 100%;
 }
