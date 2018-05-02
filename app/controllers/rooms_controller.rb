@@ -10,6 +10,13 @@ class RoomsController < ApplicationController
   # GET /rooms/1
   # GET /rooms/1.json
   def show
+    @message = Message.new
+  end
+
+  def create
+    @user = current_user
+    @room = rooms.find(params[:room_id])
+    @message = message.new(review_params)
   end
 
   # GET /rooms/new
@@ -66,6 +73,10 @@ class RoomsController < ApplicationController
     def set_room
       @room = Room.find(params[:id])
     end
+
+    def message_params
+        params.require(:message).permit(:body)
+      end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def room_params
