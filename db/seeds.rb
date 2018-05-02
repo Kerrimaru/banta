@@ -26,7 +26,7 @@
 @u6 = User.create(name:'Lettuice', email:'saladfingers@email.com', password:'pass123', rooms: [@r9])
 @u7 = User.create(name:"Userman", password: "pass123", email: "user@userman", bio: 'A user, not a loser', location: 'yo mamma', rooms: [@r9])
 @u8 = User.create(name:"Vikram", password: "pass123", email: "vik@hotguy", bio: 'loves furry critters!', location: 'London', rooms: [@r9])
-@u9 = User.create!(name: 'John', email:'John@yo.com', password: 'pass123', rooms: [@r9])
+@u9 = User.create!(name: 'John', email:'John@you.com', password: 'pass123', rooms: [@r9])
 @u10 = User.create!(name: 'Bob', email:'bob@yo.com', password: 'pass123', bio: 'Bob loves round things.', location: 'Stoke', rooms: [@r9])
 @u11 = User.create!(name: 'Jess', email:'jess@yo.com', password: 'pass123', bio: 'Jess is a mess', location: 'Londers', rooms: [@r1, @r2, @r3, @r5, @r9])
 
