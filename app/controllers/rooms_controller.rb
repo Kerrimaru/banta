@@ -11,7 +11,6 @@ class RoomsController < ApplicationController
   # GET /rooms/1.json
   def show
     set_room
-    @messages = Message.all
     @message = Message.new
   end
 
