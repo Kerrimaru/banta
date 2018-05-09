@@ -23,29 +23,43 @@
 
 function scroll(){
   var objDiv = document.querySelector(".messageView");
+  //scroll to the top of the scroll height
   objDiv.scrollTop = objDiv.scrollHeight;
 }
 
+//this is fired after the page loads, with room id as argument, and scroll as the second callback argument
 function initMessages(room, cb){
   scroll();
+  // the user becomes a subscriber here by creating a subscription to a given room/channel:
   App.messages = App.cable.subscriptions.create({channel: "BanterChannel", room: room, format: 'html'}, {
     connected: function() {
+      // Called when the subscription is ready for use on the server
     },
 
     disconnected: function() {
+      // Called when the subscription has been terminated by the server
     },
 
+    //the data below is coming from the messages/message partial, which in turn came 
+    // from the to_html function in the message model
     received: function(data) {
+       // Called when there's incoming data on the websocket for this channel
+      console.log(data);
       console.log(data.message);
-      // Called when there's incoming data on the websocket for this channel
+     //the next line selects the div with class messageView, and appends the new message to it
       document.querySelector(".messageView").innerHTML += data.message;
+      //the next line clears the text input box, readty for a new next message
       document.querySelector('textarea').value = '';
-      // scroll();
+      //the next line calls the scroll function, but ours is not working atm. lol
+      scroll();
       
     }
   });
 } 
   
+
+//after the page content has been loaded, this funtion will fire the initMessages function,
+//passing in the current room id as an argument
 document.addEventListener('DOMContentLoaded', function(){
     initMessages(<%= @room.id %>);
   });

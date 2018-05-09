@@ -20,11 +20,16 @@
 html{
   background: #dddfe6;
   text-align: center;
-
 }
+
+body {
+  margin: 0;
+}
+
 header{
   background-color: #cff0da;
 }
+
 h1, h4 {
   font-size: 1.5rem;
   font-family: 'Gugi', cursive;
@@ -39,24 +44,28 @@ nav {
   border: 2px solid black;
   background-color: #c9d6de;
 }
+
 .room_sidebar, li{
   list-style: none;
 
 }
+
 li{
   margin: 15px;
   padding: 5px;
   text-align: left;
 }
+
 table, td, tr{
  list-style: none;
-
 }
+
 .room_sidebar {
   border: 2px solid black;
   background-color: #55967e;
    font-family: 'Gugi', cursive;
 }
+
 .message_box{
   border: 2px solid black;
   background-color: #e4e7ec;
@@ -72,12 +81,15 @@ table, td, tr{
   background: #e4e7ec;
   grid-gap: 10px;
 }
-#messageView{
-  grid-area: messages;
+
+.messageView{
+  /*grid-area: messages;*/
+  max-height: 50vh;
   overflow: auto;
   background:#EEE;
+}
 
-  h3{
+h3{
     text-align:center;
     font-size:200%;
     margin-top:100px;

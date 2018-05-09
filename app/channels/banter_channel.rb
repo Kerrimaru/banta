@@ -1,7 +1,9 @@
 class BanterChannel < ApplicationCable::Channel
   
   def subscribed
-    #this is a key, it will only stream to rooms matching this key
+    #this is a key (identifier), it will only stream to rooms matching this key
+    #this method will be called when a user has subcribed to this channel
+    #it is being related to/broadcast from from app/models/message file
     stream_from "banter_channel:#{params[:room]}"
   end
 
@@ -13,6 +15,8 @@ class BanterChannel < ApplicationCable::Channel
   #   ActionCable.server.broadcast("banter_channel", :message => data['message'])
   # end
 
+  #THIS IS NOT ACTUALLY DOING ANYTHING and can be removed! We are essentialy doing the same thing
+  # in messages model to_html function. render_message is not even being called anywhere
   private
 
   def render_message(message)
